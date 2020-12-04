@@ -1,0 +1,486 @@
+{% extends './basic.html' %}
+{% load static %}
+{% load cart %}
+{% load custom_filter %}
+{% block title %}{% endblock %}
+
+        		 {% block onload %}
+
+			<div class="modal-on-load" data-target="#myModal1"></div>
+
+	<!-- On LOad Modal -->
+<div class="modal1 mfp-hide subscribe-widget mx-auto" id="myModal1" style="max-width: 750px;">
+			<div class="row justify-content-center bg-white align-items-center" style="min-height: 380px;">
+				<div class="col-md-5 p-0">
+					<div style="background: url({% static 'demos/shop/images/sari.jpg' %}) no-repeat center right; background-size: cover;  min-height: 380px;"></div>
+				</div>
+				<div class="col-md-7 bg-white p-4">
+					<div class="heading-block border-bottom-0 mb-3">
+						<h3 class="font-secondary nott ">Join Our Newsletter &amp; Get <span class="text-danger">40%</span> Off your First Order</h3>
+						<span>Get Latest Fashion Updates &amp; Offers</span>
+					</div>
+					<div class="widget-subscribe-form-result"></div>
+
+					<small class="mb-0 font-italic text-black-50">*We also hate Spam &amp; Junk Emails.</small>
+				</div>
+			</div>
+		</div>
+
+
+        {% endblock %}
+
+  {% block body %}
+
+
+
+		<!-- Slider
+		============================================= -->
+		<section id="slider" class="slider-element swiper_wrapper" data-autoplay="6000" data-speed="800" data-loop="true" data-grab="true" data-effect="fade" data-arrow="false" style="height: 600px;">
+
+			<div class="swiper-container swiper-parent">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide dark">
+						<div class="container">
+							<div class="slider-caption slider-caption-center">
+								<div>
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide-bg" style="background-image: url({% static 'demos/shop/images/hmslider.jpg' %}); background-position:center;"></div>
+					</div>
+					<div class="swiper-slide dark">
+						<div class="container">
+							<div class="slider-caption slider-caption-center">
+								<div>
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide-bg" style="background-image: url({% static 'demos/shop/images/bg.jpg' %}); background-position: center 20%;"></div>
+					</div>
+					<div class="swiper-slide dark">
+						<div class="container">
+							<div class="slider-caption slider-caption-center">
+								<div>
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide-bg" style="background-image: url({% static 'demos/shop/images/sari.jpg' %}); background-position: center 40%;"></div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+
+		</section><!-- #Slider End -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix" >
+
+					<!-- Shop Categories
+					============================================= -->
+					<div class="fancy-title title-border title-center mb-4">
+						<h4>Shop popular categories</h4>
+					</div>
+
+					<div class="row shop-categories clearfix">
+
+
+						<div class="col-lg-4">
+							<a href="/shop/Ethnics Wear" style="background: url({% static 'images/shop/2.jpg' %}) no-repeat center center; background-size: cover;">
+								<div class="vertical-middle dark center">
+									<div class="heading-block m-0 border-0">
+										<h3 class="nott font-weight-semibold ls0">Ethnics Wear</h3>
+										 <small class="button bg-white text-dark button-light button-mini">Browse Now</small>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-4">
+							<a href="/shop/Sarees" style="background: url({% static 'images/shop/1.jpg' %}) no-repeat center center; background-size: cover;">
+								<div class="vertical-middle dark center">
+									<div class="heading-block m-0 border-0">
+										<h3 class="nott font-weight-semibold ls0">Sarees</h3>
+									<small class="button bg-white text-dark button-light button-mini">Shop Now</small>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-4">
+							<a href="/shop/Lehenga Choli" style="background: url({% static 'images/lehnga/wedding/3.jpg' %}) no-repeat center center; background-size: cover;">
+								<div class="vertical-middle dark center">
+									<div class="heading-block m-0 border-0">
+										<h3 class="nott font-weight-semibold ls0">Lehenga Choli</h3>
+										 <small class="button bg-white text-dark button-light button-mini">Shop Now</small>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<!-- Featured Carousel
+					============================================= -->
+
+				</div>
+
+				<!-- New Arrival Section
+				============================================= -->
+				<div class="section my-4">
+					<div class="container">
+						<div class="row align-items-stretch">
+							<div class="col-md-5">
+								<div class="row">
+									<div class="col-md-12 center p-5">
+										<div class="heading-block mb-1 border-bottom-0 mx-auto">
+											<div class="font-secondary text-black-50 mb-1">New Arrivals</div>
+											<h3 class="nott ls0">Fresh Arrivals / Autumn 18</h3>
+											<p class="font-weight-normal mt-2 mb-3 text-muted" style="font-size: 17px; line-height: 1.4">Dynamically drive interdependent metrics for worldwide portals. Proactively grow client technology schemas.</p>
+											<a href="/shop/New Arrivals" class="button bg-dark text-white button-dark button-small ml-0">Shop Now</a>
+										</div>
+									</div>
+									<div class="col-6">
+										<a href="/shop/Naveen Exclusive"><img src="{% static 'demos/shop/images/sections/1-2.jpg' %}" alt="Image"></a>
+									</div>
+									<div class="col-6">
+										<a href="/shop/Naveen Exclusive" ><img src="{% static 'demos/shop/images/sections/1-3.jpg' %}" alt="Image"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-7 min-vh-50">
+								<a href="https://www.youtube.com/watch?v=r82EYBQ5Wzo" data-lightbox="iframe" class="d-block position-relative h-100" style="background: url({% static 'demos/shop/images/sections/1.jpg' %}) center center no-repeat; background-size: cover;">
+
+									<div class="vertical-middle text-center">
+										<div class="play-icon"><i class="icon-play-sign display-3 text-light"></i></div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+
+				<!-- New Arrivals Men
+				============================================= -->
+				<div class="container clearfix">
+
+					<div class="fancy-title title-border mt-4 title-center">
+						<h4>Weekly Featured Items</h4>
+					</div>
+
+					<div id="oc-products" class="owl-carousel products-carousel carousel-widget" data-margin="20" data-loop="true" data-autoplay="5000" data-nav="true" data-pagi="false" data-items-xs="1" data-items-sm="2" data-items-md="3" data-items-lg="4" data-items-xl="5">
+
+						<!-- Shop Item 1
+						============================================= -->
+						{% for i in weekely %}
+						<div class="oc-item">
+							<div class="product">
+								<div class="product-image">
+
+									<a href="/product_detail/{{i.id}}"><img src="{{i.image1.url}}" alt="{{i.name}}"></a>
+									{% if i.image2 %}
+									<a href="/product_detail/{{i.id}}"><img src="{{i.image2.url}}" alt="{{i.name}}"></a>
+									{% endif %}
+									{% if i.lable == Sale %}
+									<div class="sale-flash badge badge-danger p-2">Sale!</div>
+									{% elif i.lable == outOfStock %}
+									<div class="sale-flash badge badge-secondary p-2">Out of Stock!</div>
+									{% endif %}
+
+
+								</div>
+								<div class="product-desc">
+									<a href="/product_detail/{{i.id}}" class="btn btn-dark" >Shop Now</a>
+									<div class="product-title mb-1"><h3><a href="/product_detail/{{i.id}}">{{i.name}}</a></h3></div>
+									 {% if i.discount_price == 0 %}
+									<div class="product-price font-primary"><ins>{{i.price|currency}}</ins></div>
+									{% else %}
+									<div class="product-price font-primary"><del class="mr-1">{{i.price|currency}}</del> <ins>{{i.discount_price|currency}}</ins></div>
+									{% endif %}
+
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+
+
+
+
+					</div>
+
+
+					<div class="fancy-title title-border mt-4 title-center">
+						<h4>New Arrival Items</h4>
+					</div>
+
+					<div id="oc-products" class="owl-carousel products-carousel carousel-widget" data-margin="20" data-loop="true" data-autoplay="5000" data-nav="true" data-pagi="false" data-items-xs="1" data-items-sm="2" data-items-md="3" data-items-lg="4" data-items-xl="5">
+
+						<!-- Shop Item 1
+						============================================= -->
+						{% for i in new_arrival %}
+						<div class="oc-item">
+							<div class="product">
+								<div class="product-image">
+
+									<a href="/product_detail/{{i.id}}"><img src="{{i.image1.url}}" alt="Round Neck T-shirts"></a>
+									{% if i.image2 %}
+									<a href="/product_detail/{{i.id}}"><img src="{{i.image2.url}}" alt="Round Neck T-shirts"></a>
+									{% endif %}
+									{% if i.lable %}
+									<div class="sale-flash badge badge-success p-2">{{i.lable}}</div>
+									{% endif %}
+									{% if i.stock < 1 %}
+									<div class="sale-flash1 badge badge-danger p-2">Out of Stock</div>
+									{% endif %}
+
+
+								</div>
+								<div class="product-desc">
+										<a href="/product_detail/{{i.id}}" class="btn btn-dark" >Shop Now</a>
+									<div class="product-title mb-1"><h3><a href="/product_detail/{{i.id}}">{{i.name}}</a></h3></div>
+									 {% if i.discount_price == 0 %}
+									<div class="product-price font-primary"><ins>{{i.price|currency}}</ins></div>
+									{% else %}
+
+									<div class="product-price font-primary"><del class="mr-1">{{i.price|currency}}</del> <ins>{{i.discount_price|currency}}</ins></div>
+									{% endif %}
+
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+
+
+
+					</div>
+
+
+				</div>
+
+				<!-- Sign Up
+				============================================= -->
+				<div class="section my-4 py-5">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row align-items-stretch align-items-center">
+									<div class="col-md-7 min-vh-50" style="background: url({% static 'demos/shop/images/sections/1-2.jpg' %}) center center no-repeat; background-size: cover;">
+										<div class="vertical-middle pl-5">
+											<!-- <h2 class="pl-5"><strong>40%</strong> Off<br>First Order*</h2> -->
+										</div>
+									</div>
+									<div class="col-md-5 bg-white">
+										<div class="card border-0 py-2">
+											<div class="card-body">
+												<h3 class="card-title mb-4 ls0">Sign up to get the most out of shopping.</h3>
+												<ul class="iconlist ml-3">
+													<li><i class="icon-circle-blank text-black-50"></i> Receive Exclusive Sale Alerts</li>
+													<li><i class="icon-circle-blank text-black-50"></i> 30 Days Return Policy</li>
+													<li><i class="icon-circle-blank text-black-50"></i> Cash on Delivery Accepted</li>
+												</ul>
+												<a href="/signup/" class="button button-rounded ls0 font-weight-semibold ml-0 mb-2 nott px-4">Sign Up</a><br>
+												<small class="font-italic text-black-50">Don't worry, it's totally free.</small>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+
+					<!-- Features
+					============================================= -->
+					<div class="row col-mb-50 mb-0 mt-5">
+						<div class="col-lg-7">
+							<div class="row mt-3">
+								<div class="col-sm-6">
+									<div class="feature-box fbox-sm fbox-plain">
+										<div class="fbox-icon">
+											<a href="#"><i class="icon-line2-present text-dark text-dark"></i></a>
+										</div>
+										<div class="fbox-content">
+											<h3 class="font-weight-normal">100% Original</h3>
+											<p>Canvas provides support for Native HTML5 Videos that can be added to a Full Width Background.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-6 mt-4 mt-sm-0">
+									<div class="feature-box fbox-sm fbox-plain">
+										<div class="fbox-icon">
+											<a href="#"><i class="icon-line2-globe text-dark"></i></a>
+										</div>
+										<div class="fbox-content">
+											<h3 class="font-weight-normal">Free Shipping</h3>
+											<p>Display your Content attractively using Parallax Sections that have unlimited customizable areas.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-6 mt-4">
+									<div class="feature-box fbox-sm fbox-plain">
+										<div class="fbox-icon">
+											<a href="#"><i class="icon-line2-reload text-dark"></i></a>
+										</div>
+										<div class="fbox-content">
+											<h3 class="font-weight-normal">30-Days Returns</h3>
+											<p>You have complete easy control on each &amp; every element that provides endless customization possibilities.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-6 mt-4">
+									<div class="feature-box fbox-sm fbox-plain">
+										<div class="fbox-icon">
+											<a href="#"><i class="icon-line2-wallet text-dark"></i></a>
+										</div>
+										<div class="fbox-content">
+											<h3 class="font-weight-normal">Payment Options</h3>
+											<p>We accept Visa, MasterCard and American Express. And We also Deliver by COD(only in US)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-5">
+							<div class="accordion clearfix">
+
+								<div class="accordion-header">
+									<div class="accordion-icon">
+										<i class="accordion-closed icon-ok-circle"></i>
+										<i class="accordion-open icon-remove-circle"></i>
+									</div>
+									<div class="accordion-title">
+										Our Mission
+									</div>
+								</div>
+								<div class="accordion-content">D
+								c sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</div>
+
+								<div class="accordion-header">
+									<div class="accordion-icon">
+										<i class="accordion-closed icon-ok-circle"></i>
+										<i class="accordion-open icon-remove-circle"></i>
+									</div>
+									<div class="accordion-title">
+										What we Do?
+									</div>
+								</div>
+								<div class="accordion-content">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.</div>
+
+								<div class="accordion-header">
+									<div class="accordion-icon">
+										<i class="accordion-closed icon-ok-circle"></i>
+										<i class="accordion-open icon-remove-circle"></i>
+									</div>
+									<div class="accordion-title">
+										Our Company's Values
+									</div>
+								</div>
+								<div class="accordion-content">Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur.</div>
+
+								<div class="accordion-header">
+									<div class="accordion-icon">
+										<i class="accordion-closed icon-ok-circle"></i>
+										<i class="accordion-open icon-remove-circle"></i>
+									</div>
+									<div class="accordion-title">
+										Our Return Policy
+									</div>
+								</div>
+								<div class="accordion-content">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.</div>
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="clear"></div>
+
+
+					<div class="container clearfix">
+
+				<div class="row align-items-stretch gutter-20 mb-5 min-vh-60">
+	<div class="col-xl-8 min-vh-50">
+		<div class="fslider h-100" data-arrows="false">
+			<div class="flexslider">
+				<div class="slider-wrap">
+					<div class="slide">
+
+							<img src="{% static 'images/shop/slider/1.jpg' %}" alt="Shop Image">
+						</a>
+					</div>
+					<div class="slide">
+
+							<img src="{% static 'images/shop/slider/2.jpg' %}" alt="Shop Image">
+						</a>
+					</div>
+					<div class="slide">
+
+							<img src="{% static 'images/shop/slider/3.jpg' %}" alt="Shop Image">
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-xl-4">
+		<div class="row align-items-stretch gutter-20 min-vh-25 h-100">
+			<div class="col-12 col-md-6 col-xl-12 min-vh-25 min-vh-md-0">
+				<a href="{% static 'images/shop/12.jpg' %}" class="grid-inner d-block h-100" style="background-image: url({% static 'images/shop/12.jpg' %});"></a>
+			</div>
+        </div>
+	</div>
+
+
+</div>
+			</div>
+				</div>
+
+
+
+				<!-- App Buttons
+				============================================= -->
+				<div class="section pb-0 mb-0" style="background-color: #f8f5f0">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 offset-1 bottommargin-lg d-flex flex-column align-self-center">
+								<h3 class="card-title font-weight-normal ls0">Follow. Find. Favorite.<br>Discover Fashion on the Go.</h3>
+								<span>Proactively enable Corporate Benefits.</span>
+								<!-- <div class="mt-3">
+									<a href="#" class="button inline-block button-small button-rounded button-desc font-weight-normal ls1 clearfix"><i class="icon-apple"></i><div><span>Download Canvas Shop</span>App Store</div></a>
+									<a href="#" class="button inline-block button-small button-rounded button-desc button-light text-dark font-weight-normal ls1 bg-white border clearfix"><i class="icon-googleplay"></i><div><span>Download Canvas Shop</span>Google Play</div></a>
+								</div> -->
+							</div>
+							<div class="col-md-4 d-none d-md-flex align-items-end">
+								<img src="{% static 'demos/shop/images/bg.jpg' %}" alt="Image" class="mb-0">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Last Section
+				============================================= -->
+
+			</div>
+		</section><!-- #content end -->
+
+
+{% endblock %}
+{% block js %}
+<script>
+
+</script>
+
+{% endblock %}
+
